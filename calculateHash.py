@@ -1,3 +1,5 @@
+# Hashlib is another library i can use. Now have to check which one is fast.
+
 from Crypto.Hash import SHA256
 def calculateHash(index, previousHash, timestamp, data):
 	b = bytearray()
