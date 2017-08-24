@@ -3,4 +3,4 @@ def calculateHash(index, previousHash, timestamp, data):
 	b = bytearray()
 	s = index + previousHash + timestamp + data
 	h = SHA256.new(b.extend(s.encode()))
-    return str(h)
+    return str(h.hexdigest())
